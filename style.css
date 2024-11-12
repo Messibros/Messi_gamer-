@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box
+  
+}
+body{
+  background-image: url("assets/img-fundo.jpg");
+
+ 
+}
+h3{
+        color: yellow;
+        text-align: center;
+        text-shadow: 2px 2px 1px
+        rgba(0, 0, 0, 1);
+}
+p{
+        color: lawngreen;
+        text-align: center;
+        text-shadow: 2px 2px 1px
+        rgba(0, 0, 0, 1);
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ flex-wrap: wrap;
+  
+  height: 20vh;
+  
+}
+.sonia-gif{
+ 
+   
+   margin: -17px;
+   width: 90px;
+
+    display: inline-block;
+     transform: scalez(-1)
+}
+
+.color-kano{
+      
+    padding: 1px;
+    border: 3px solid lawngreen; /* Começa transparente */
+    animation: piscar 1.2s infinite; /* Chama a animação */
+}
+
+/* Animação de piscar */
+@keyframes piscar {
+    0%, 100% {
+        border-color: lawngreen; /* Invisível no começo e no fim */
+    }
+    50% {
+        border-color: lawngreen; /* Cor da borda no meio do ciclo */
+    }
+}
+
+
+
+
+.kano-gif{
+    margin: -17px;
+   width: 90px;
+    
+    display: inline-block;
+     transform: scalex(-1)
+}
+.color-sonia{
+      padding: 1px;
+    border: 3px solid transparent; /* Começa transparente */
+    animation: piscar 1s infinite; /* Chama a animação */
+}
+
+/* Animação de piscar */
+@keyframes piscar {
+    0%, 100% {
+        border-color: greenyellow; /* Invisível no começo e no fim */
+    }
+    50% {
+        border-color: transparent; /* Cor da borda no meio do ciclo */
+    }
+
+}
+
